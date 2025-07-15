@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - INC Solar | บริษัท ไอเอ็นซี เทคโนโลยี จำกัด</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="https://via.placeholder.com/120x40/005A9C/FFFFFF?text=INC+SOLAR" alt="INC Solar Logo" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">บริการ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">ติดต่อเรา</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="สลับธีม">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <a href="contact.html" class="cta-button">ขอใบเสนอราคา</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title gradient-text">ติดต่อเรา</h1>
+                <p class="page-subtitle">พร้อมให้คำปรึกษาและใบเสนอราคาฟรี</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h2 class="form-title">ส่งข้อความถึงเรา</h2>
+                            <p class="form-description">
+                                กรอกข้อมูลด้านล่าง เราจะติดต่อกลับภายใน 24 ชั่วโมง
+                            </p>
+                        </div>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">ชื่อ *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">นามสกุล *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">อีเมล *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">เบอร์โทรศัพท์ *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company" class="form-label">บริษัท/องค์กร</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">บริการที่สนใจ *</label>
+                                <select id="service" name="service" class="form-select" required>
+                                    <option value="">กรุณาเลือกบริการ</option>
+                                    <option value="rooftop">ระบบโซลาร์รูฟท็อป</option>
+                                    <option value="solar-farm">ระบบโซลาร์ฟาร์ม</option>
+                                    <option value="maintenance">บำรุงรักษาระบบ</option>
+                                    <option value="consultation">ปรึกษาและออกแบบ</option>
+                                    <option value="other">อื่นๆ</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget" class="form-label">งบประมาณโดยประมาณ</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">กรุณาเลือกงบประมาณ</option>
+                                    <option value="100k-300k">100,000 - 300,000 บาท</option>
+                                    <option value="300k-500k">300,000 - 500,000 บาท</option>
+                                    <option value="500k-1m">500,000 - 1,000,000 บาท</option>
+                                    <option value="1m-3m">1,000,000 - 3,000,000 บาท</option>
+                                    <option value="3m+">มากกว่า 3,000,000 บาท</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">ข้อความ *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" 
+                                    placeholder="กรุณาแจ้งรายละเอียดความต้องการ พื้นที่ติดตั้ง หรือคำถามที่ต้องการสอบถาม" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <span class="checkmark"></span>
+                                    ยินยอมให้บริษัทฯ ติดต่อเพื่อให้ข้อมูลและข้อเสนอเกี่ยวกับบริการ *
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large btn-block">
+                                <i class="fas fa-paper-plane"></i>
+                                ส่งข้อความ
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-container">
+                        <div class="contact-card">
+                            <h3 class="contact-card-title">ข้อมูลการติดต่อ</h3>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>บริษัท</h4>
+                                        <p>บริษัท ไอเอ็นซี เทคโนโลยี จำกัด</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>ผู้ติดต่อ</h4>
+                                        <p>คุณชาญณรงค์ชัย ภูมาศ</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>ที่อยู่</h4>
+                                        <p>126/260 ซ.รามอินทรา 40<br>
+                                        ถ.รามอินทรา แขวงคลองกุ่ม<br>
+                                        เขตบึงกุ่ม กรุงเทพฯ 10230</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>โทรศัพท์</h4>
+                                        <p><a href="tel:+6625091264">+66 2509 1264</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>มือถือ</h4>
+                                        <p><a href="tel:+66818569812">+66 81856 9812</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-fax"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>แฟกซ์</h4>
+                                        <p>+66 2509 1631</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>อีเมล</h4>
+                                        <p><a href="mailto:incscada@gmail.com">incscada@gmail.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="business-hours-card">
+                            <h3 class="contact-card-title">เวลาทำการ</h3>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="day">จันทร์ - ศุกร์</span>
+                                    <span class="time">08:30 - 17:30 น.</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">เสาร์</span>
+                                    <span class="time">09:00 - 16:00 น.</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">อาทิตย์</span>
+                                    <span class="time">ปิดทำการ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Contact -->
+                        <div class="quick-contact-card">
+                            <h3 class="contact-card-title">ติดต่อด่วน</h3>
+                            <div class="quick-contact-buttons">
+                                <a href="tel:+6625091264" class="quick-btn call-btn">
+                                    <i class="fas fa-phone"></i>
+                                    <span>โทรเลย</span>
+                                </a>
+                                <a href="mailto:incscada@gmail.com" class="quick-btn email-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>ส่งอีเมล</span>
+                                </a>
+                                <a href="https://line.me/ti/p/~@incsolar" class="quick-btn line-btn" target="_blank">
+                                    <i class="fab fa-line"></i>
+                                    <span>LINE</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">แผนที่</h2>
+                    <p class="section-subtitle">ที่ตั้งของบริษัท ไอเอ็นซี เทคโนโลยี จำกัด</p>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2!2d100.6089!3d13.8657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29c4f0!2sRam%20Inthra%20Rd%2C%20Khlong%20Kum%2C%20Bueng%20Kum%2C%20Bangkok%2010230!5e0!3m2!1sen!2sth!4v1699999999999!5m2!1sen!2sth"
+                        class="google-map"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">คำถามที่พบบ่อย</h2>
+                    <p class="section-subtitle">คำตอบสำหรับคำถามที่ลูกค้าสอบถามบ่อยที่สุด</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>ใช้เวลาติดตั้งระบบโซลาร์เซลล์นานแค่ไหน?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>สำหรับระบบรูฟท็อปขนาดเล็กถึงกลาง ใช้เวลาติดตั้ง 1-2 วันทำการ 
+                            ส่วนระบบขนาดใหญ่อาจใช้เวลา 1-2 สัปดาห์ ขึ้นอยู่กับขนาดและความซับซ้อนของระบบ</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>รับประกันระบบโซลาร์เซลล์กี่ปี?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>เรารับประกันแผงโซลาร์เซลล์ 25 ปี สำหรับประสิทธิภาพการผลิตไฟฟ้า 
+                            อินเวอร์เตอร์รับประกัน 10-15 ปี และงานติดตั้งรับประกัน 5 ปี</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>ประหยัดค่าไฟได้มากแค่ไหน?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ขึ้นอยู่กับขนาดระบบและการใช้ไฟฟ้า โดยทั่วไปสามารถประหยัดได้ 50-90% 
+                            และยังได้รับเงินจากการขายไฟกลับให้ PEA/MEA อีกด้วย</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>ต้องขออนุญาตอะไรบ้างก่อนติดตั้ง?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ต้องขออนุญาต PEA/MEA สำหรับต่อเชื่อมระบบและขายไฟกลับ 
+                            เราจะช่วยดำเนินการเอกสารให้ลูกค้าทุกขั้นตอน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="https://via.placeholder.com/150x50/005A9C/FFFFFF?text=INC+SOLAR" alt="INC Solar Logo" class="footer-logo">
+                        <p class="footer-description">
+                            ผู้นำด้านการติดตั้งระบบพลังงานแสงอาทิตย์ที่ใช้เทคโนโลยีล้ำสมัย
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">บริการ</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">ระบบโซลาร์รูฟท็อป</a></li>
+                        <li><a href="services.html">ระบบโซลาร์ฟาร์ม</a></li>
+                        <li><a href="services.html">บำรุงรักษาระบบ</a></li>
+                        <li><a href="services.html">ปรึกษาและออกแบบ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">บริษัท</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="services.html">บริการ</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">ติดต่อเรา</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-building"></i> บริษัท ไอเอ็นซี เทคโนโลยี จำกัด</p>
+                        <p><i class="fas fa-user"></i> คุณชาญณรงค์ชัย ภูมาศ</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 126/260 ซ.รามอินทรา 40 ถ.รามอินทรา แขวงคลองกุ่ม เขตบึงกุ่ม กรุงเทพฯ 10230</p>
+                        <p><i class="fas fa-phone"></i> Tel: +66 2509 1264</p>
+                        <p><i class="fas fa-mobile-alt"></i> Mobile: +66 81856 9812</p>
+                        <p><i class="fas fa-envelope"></i> incscada@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 บริษัท ไอเอ็นซี เทคโนโลยี จำกัด สงวนลิขสิทธิ์</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
