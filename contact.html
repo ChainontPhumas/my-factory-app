@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - INC Solar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2>INC Solar</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="services.html">บริการ</a></li>
+                    <li><a href="contact.html" class="active">ติดต่อ</a></li>
+                </ul>
+                <a href="contact.html" class="cta-btn">ขอใบเสนอราคา</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>ติดต่อเรา</h1>
+            <p>พร้อมให้คำปรึกษาและบริการ 24/7</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>ส่งข้อความถึงเรา</h2>
+                    <p>กรอกแบบฟอร์มด้านล่าง เราจะติดต่อกลับภายใน 24 ชั่วโมง</p>
+                    
+                    <form class="form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">ชื่อ-นามสกุล *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">อีเมล *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">เบอร์โทรศัพท์ *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">หัวข้อ</label>
+                            <select id="subject" name="subject">
+                                <option value="">เลือกหัวข้อ</option>
+                                <option value="residential">สนใจโซลาร์เซลล์สำหรับบ้าน</option>
+                                <option value="commercial">สนใจโซลาร์เซลล์สำหรับธุรกิจ</option>
+                                <option value="maintenance">บริการบำรุงรักษา</option>
+                                <option value="consultation">ขอคำปรึกษา</option>
+                                <option value="other">อื่นๆ</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">ข้อความ *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="กรุณาระบุรายละเอียดที่ต้องการปรึกษา เช่น ขนาดบ้าน การใช้ไฟฟ้าเฉลี่ยต่อเดือน หรือคำถามอื่นๆ" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">ส่งข้อความ</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>ข้อมูลการติดต่อ</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ที่อยู่</h3>
+                            <p>123 ถนนสุขุมวิท แขวงคลองเตย<br>
+                            เขตคลองเตย กรุงเทพฯ 10110</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>โทรศัพท์</h3>
+                            <p>02-123-4567<br>
+                            081-234-5678 (มือถือ)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>อีเมล</h3>
+                            <p>info@incsolar.co.th<br>
+                            sales@incsolar.co.th</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>เวลาทำการ</h3>
+                            <p>จันทร์ - ศุกร์: 8:00 - 18:00<br>
+                            เสาร์: 9:00 - 17:00<br>
+                            อาทิตย์: ปิด (รับเฉพาะกรณีฉุกเฉิน)</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <h3>ติดตามเรา</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-line"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">แผนที่</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.4999234567!2d100.56121!3d13.7307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed3e1a1234%3A0x1234567890abcdef!2sSukhumvit%20Rd%2C%20Khlong%20Toei%2C%20Bangkok!5e0!3m2!1sen!2sth!4v1234567890123!5m2!1sen!2sth" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">คำถามที่พบบ่อย</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>โซลาร์เซลล์ใช้งานได้กี่ปี?</h3>
+                    <p>โซลาร์เซลล์คุณภาพดีสามารถใช้งานได้ 25-30 ปี พร้อมรับประกันประสิทธิภาพการทำงาน</p>
+                </div>
+                <div class="faq-item">
+                    <h3>ต้องลงทุนเท่าไหร่?</h3>
+                    <p>ขึ้นอยู่กับขนาดและความต้องการ สำหรับบ้านพักอาศัยเริ่มต้น 120,000 บาท มีระบบผ่อนชำระ</p>
+                </div>
+                <div class="faq-item">
+                    <h3>คืนทุนใน กี่ปี?</h3>
+                    <p>โดยเฉลี่ยคืนทุนภายใน 6-8 ปี จากการประหยัดค่าไฟฟ้าและการขายไฟฟ้าให้การไฟฟ้า</p>
+                </div>
+                <div class="faq-item">
+                    <h3>ติดตั้งใช้เวลานานไหม?</h3>
+                    <p>สำหรับบ้านพักอาศัยใช้เวลา 1-2 วัน โครงการขนาดใหญ่ขึ้นอยู่กับความซับซ้อน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>พร้อมเริ่มต้นแล้วหรือยัง?</h2>
+                <p>ทีมผู้เชี่ยวชาญพร้อมให้คำปรึกษาและประเมินพื้นที่ติดตั้งฟรี โทรเลย!</p>
+                <div class="cta-buttons">
+                    <a href="tel:021234567" class="btn-primary">
+                        <i class="fas fa-phone"></i> โทร 02-123-4567
+                    </a>
+                    <a href="#" class="btn-secondary">
+                        <i class="fab fa-line"></i> Line: @incsolar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>INC Solar</h3>
+                    <p>ผู้นำด้านการติดตั้งระบบโซลาร์เซลล์ คุณภาพสูง ราคายุติธรรม</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าหลัก</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="services.html">บริการ</a></li>
+                        <li><a href="contact.html">ติดต่อ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>ติดต่อเรา</h4>
+                    <p><i class="fas fa-phone"></i> 02-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@incsolar.co.th</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 ถนนสุขุมวิท กรุงเทพฯ 10110</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 INC Solar. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
